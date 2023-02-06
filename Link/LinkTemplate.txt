@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Link Assignment</title>
+        <style>
+            img {
+                height: 250px;
+                width: 250px;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <h1><i><b><u>3 Projects:</u></b></i></h1>
+    
+        <a href="#">All About Me</a>
+        <img src="">
+        <br>
+        <hr>
+        <br>
+        <a href="#">Halloween</a>
+        <img src="">
+        <br>
+        <hr>
+        <br>
+        <a href="#">Remote Learning</a>
+        <img src="">
+        <br>
+        <hr>
+        <br>
+    </body>
+
+
+</html>

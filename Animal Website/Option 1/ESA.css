@@ -1,0 +1,160 @@
+h3 {
+    text-decoration: underline;
+}
+
+ol.nest {
+    list-style-type: none;
+}
+
+hr.break {
+    width: 50%;
+    border-color: darkgray;
+    border-width: 3px;
+
+}
+
+.item1 { grid-area: menu;}
+.item2 { grid-area: content;}
+.item3 { grid-area: right;}
+.item4 { grid-area: slide}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'content content content content menu'
+    'content content content content slide'
+    'content content content content slide'
+    'content content content content slide'
+    'content content content content right';
+  grid-gap: 10px;
+  background-color: rgba(255, 255, 255, 0.0);
+  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border: 4px black solid;
+}
+
+.item1, .item2, .item3, .item4 {
+    vertical-align: top;
+}
+
+.item1 {
+    border-top-right-radius: 10px;
+}
+
+.item2 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.item2 > *, .item3 > * {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.item2 li {
+    text-align: left;
+    font-family: monospace;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+#bcg {
+    border: 2px black solid;
+    border-radius: 20px;
+    background-color: rgb(175, 175, 182);
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+.item3 {
+    border-bottom-right-radius: 10px;
+}
+
+.item4 {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.1))
+        border-box, url(https://source.unsplash.com/1600x900/?endangered)
+  no-repeat center center;
+  
+}
+
+#ToC {
+    background-color: rgb(236, 207, 177);
+}
+
+
+/*  TABLET MEDIA QUERY */
+
+@media screen and (max-width:950px){
+    .grid-container {
+    grid-template-areas:
+    'menu menu menu menu'
+    'content content content content'
+    'content content content content'
+    'right right slide slide'
+    'right right slide slide'
+    }
+
+    .item1, .item2, .item3, .item4 {
+        border-radius: 0px;
+    }
+    
+    .nav-items{
+    grid-column: 1/5;
+    text-align: center;
+    }
+
+    .nav-wrapper{
+    margin-top: 0;
+    }
+}
+
+
+/* Phone media check */
+
+@media screen and (max-width:690px){
+
+
+  .nav-items{
+    grid-column: 1/5;
+    text-align: center;
+  }
+
+  .nav-wrapper ul{
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-wrapper ul li{
+    display: block;
+  }
+
+  .grid-container{
+    grid-template-areas:
+    'menu menu menu menu menu menu'
+    'content content content content content content'
+    'slide slide slide slide slide slide'
+    'right right right right right right'
+    
+  }
+
+  .item4 {
+    height: 500px;
+  }
+    
+  .footer > div{
+    grid-column: 1/-1;
+  }
+
+    
+}

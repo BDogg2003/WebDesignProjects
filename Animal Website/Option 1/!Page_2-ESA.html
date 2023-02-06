@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Endangered and Threatened Animals</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="Big_Boi.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="icon" href="https://i.ibb.co/bXXfDQY/ruby2.png">
+        <link rel="stylesheet" href="ESA.css">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    
+        <style>
+            .vl {
+                border-left: 3px solid black;
+                height: 95%;
+                margin-left: -3px;
+                top: 0;
+            }
+        </style>
+        
+        <script>
+            function display() {
+                document.getElementById("hi").innerHTML = "Height: " + window.innerHeight;
+                document.getElementById("wi").innerHTML = "Width: " + window.innerWidth;
+                if(window.innerWidth <= 690) {
+                    document.getElementById("screen-type").innerHTML = "Phone Media";
+                } else if(window.innerWidth <= 950) {
+                    document.getElementById("screen-type").innerHTML = "Tablet Media";
+                } else {
+                    document.getElementById("screen-type").innerHTML = "Normal Media";
+                }
+            }
+        
+        </script>
+    </head>
+    <body>
+        
+        <nav class="nav-wrapper">
+            <div style="width: 2px;"><img src="https://i.ibb.co/bXXfDQY/ruby2.png" style="float: left; width: 50px; height: 50px;"></div>
+            <ul class="nav-items main-nav mobile-hide">
+                <li class="list-item"><a href="!Page_1-Home.html">Home</a></li>
+                <li class="list-item"><a href="!Page_2-ESA.html" class="active">Endangered Species Act</a></li>
+                <li class="list-item"><a href="!Page_3-Okapi.html">Endangered Profile: Okapi</a></li>
+                <li class="list-item"><a href="!Page_4-Kakapo.html">Endangered Profile: Kakapo</a></li>
+            </ul>
+        </nav>
+        
+        <div class="grid-container">
+            
+            <div class="item1" id="ToC">
+                <h4><u>Table of Contents</u></h4>
+                <ol class="nest">
+                    <li><a href="#purpose">1. Purpose</a></li>
+                    <li><a href="#history">2. History</a>
+                        <ol class="nest">
+                            <li><a href="#1966">2.1 Endangered Species Preservation Act of 1966</a></li>
+                            <li><a href="#1969">2.2 Endangered Species Concervation Act of 1969</a></li>
+                            <li><a href="#1973">2.3 Endangered Species Act of 1973</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#req">3. Classification</a>
+                        <ol class="nest">
+                            <li><a href="#PaL">3.1 Petition and Listing</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#pen">4. Violation</a></li>
+                    <li><a href="#SS">5. Success</a></li>
+                </ol>
+                
+<!--                <button onclick=display();>Window Size Check</button>-->
+                
+                <p id="hi"></p>
+                <p id="wi"></p>
+                <p id="screen-type"></p>
+                
+            </div>
+            
+            <div class="item2" id="info">
+                <h2>Endangered Species Act of 1973<sup><a href="#my-footer">[I]</a></sup></h2>
+                <hr style="margin-top: -10px">
+                <p>The Endangered Species Act of 1973 (also knows as the ESA) is the main law in the US for protecting jepordized species. Called “the most comprehensive legislation for the preservation of endangered species enacted by any nation" by the U.S. Supreme Court, the purposes of the ESA are two-fold: to prevent extinction and to recover species to the point where the law's protections are not needed.</p>
+                <hr class="break">
+                
+                <div id="purpose">
+                    <h3>Purpose</h3>
+                    <p>The purposes of the ESA are two-fold: to prevent extinction and to recover species to the point where the law's protections are not needed. It therefore “protect[s] species and the ecosystems upon which they depend" through different mechanisms. For example, section 4 requires the agencies overseeing the Act to designate imperiled species as threatened or endangered. Section 9 prohibits unlawful ‘take,’ of such species, which means to “harass, harm, hunt...” Section 7 directs federal agencies to use their authorities to help conserve listed species. The Act also serves as the enacting legislation to carry out the provisions outlined in The Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES). The Supreme Court found that "the plain intent of Congress in enacting" the ESA "was to halt and reverse the trend toward species extinction, whatever the cost." The Act is administered by two federal agencies, the United States Fish and Wildlife Service (FWS) and the National Marine Fisheries Service (NMFS). FWS and NMFS have been delegated the authority to promulgate rules in the Code of Federal Regulations to implement the provisions of the Act.<sup><a href="#my-footer">[1]</a></sup></p>
+                </div>
+                <hr class="break">
+                
+                <div id="history">
+                    <h3>History</h3>
+                    <p>Before the ESA, there were many acts which amed to do several things. The idea of wildlife conservation in the US increaced in the early 1900's due to the visible decline of many species, such as the bison, passenger pidgeon, and whooping crane. Scientists of the time played a crucial role in raising awareness about the losses. George Bird Grinnell, for example, published <em>Forest and Stream,</em> which highlighted the drastic decrease in buffalo.</p>
+                    
+                    <p> To address concerns, congress passed the Lacey Act of 1900, which was the first federal law that regulated commercial animal markets. It also outlawed the sale of illagly poached animals across state boarders. this was followed by the Migratory Bird Conservation Act, a 1937 treaty prohibiting the hunting of right and gray whales, and the Bald and Golden Eagle Protection Act of 1940.</p>
+<!--                    -->
+                    <h4 id="1966">Endangered Species Preservation Act of 1966<sup><a href="#my-footer">[2]</a></sup></h4>
+                    <p>Congress passed the Endangered Species Preservation Act on October 15, 1966. The Act initiated a program to conserve, protect, and restore select species of native fish and wildlife. As a part of this program, Congress authorized the Secretary of the Interior to acquire land or interests in land that would further the conservation of these species.</p>
+                    
+                    <p>The Department of Interior issued the first list of endangered species in March 1967. It included 14 mammals, 36 birds, 6 reptiles, 6 amphibians, and 22 fish.[14] A few notable species listed in 1967 included the grizzly bear, American alligator, Florida manatee, and bald eagle. The list included only vertebrates at the time because the Department of Interior's limited definition of "fish and wildlife."</p>
+<!--                    -->
+                    <h4 id="1969">Endangered Species Conservation Act of 1969<sup><a href="#my-footer">[3]</a></sup></h4>
+                    <p>The  Endangered Species Conservation Act of 1969 (P. L. 91–135) amended the Endangered Species Preservation Act of 1966. It established a list of species in danger of worldwide extinction. It also expanded protections for species covered in 1966 and added to the list of protected species. </p>
+                    
+                    <p>Notably, the Act called for an international convention or treaty to conserve endangered species. A 1963 IUCN resolution called for a similar international convention. In February, 1973 a meeting in Washington D.C. was convened. This meeting produced the comprehensive multilateral treaty known as CITES or the Convention on International Trade of Endangered Species of Wild Fauna and Flora.</p>
+<!--                    -->
+                    <h4 class="1973">Endangered Species Act of 1973<sup><a href="#my-footer">[4]</a></sup></h4>
+                    <p>President Richard Nixon declared current species conservation efforts to be inadequate and called on the 93rd United States Congress to pass comprehensive endangered species legislation. Congress responded with a completely rewritten law, the Endangered Species Act of 1973, which was signed by Nixon on December 28, 1973.</p>
+                    
+                    <p>The ESA is administered by two federal agencies, the United States Fish and Wildlife Service (FWS) and the National Marine Fisheries Service (NMFS). NMFS handles marine species, and the FWS has responsibility over freshwater fish and all other species. Species that occur in both habitats (e.g. sea turtles and Atlantic sturgeon) are jointly managed.</p>
+
+                    <p>In March 2008, The Washington Post reported that documents showed that the Bush Administration, beginning in 2001, had erected "pervasive bureaucratic obstacles" that limited the number of species protected under the act:</p>
+                        <ul id="bcg">
+                            <li>From 2000 to 2003, until a U.S. District Court overturned the decision, Fish and Wildlife Service officials said that if that agency identified a species as a candidate for the list, citizens could not file petitions for that species.</li>
+                            <li>Interior Department personnel were told they could use "info from files that refutes petitions but not anything that supports" petitions filed to protect species.</li>
+                            <li>Senior department officials revised a longstanding policy that rated the threat to various species based primarily on their populations within U.S. borders, giving more weight to populations in Canada and Mexico, countries with less extensive regulations than the U.S.</li>
+                            <li>Officials changed the way species were evaluated under the act by considering where the species currently lived, rather than where they used to exist.</li>
+                            <li>Senior officials repeatedly dismissed the views of scientific advisers who said that species should be protected</li>
+                        </ul>
+                </div>
+                <hr class="break">
+                
+                <div id="req">
+                    <h3>Classification</h3>
+                    <p>Section 4 of the ESA sets forth the process by which species are designated as endangered or threatened. Species with these designations receive protections under federal law. Section 4 also requires critical habitat designation and recovery plans for those species.</p>
+<!--                    -->
+                    <h4 id="PaL">Petition and listing<sup><a href="#my-footer">[5]</a></sup></h4>
+                    <p>To be considered for listing, the species must meet one of five criteria: </p>
+                    <ol id="bcg">
+                        <li> There is the present or threatened destruction, modification, or curtailment of its habitat or range.</li>
+                        <li> An over utilization for commercial, recreational, scientific, or educational purposes.</li>
+                        <li> The species is declining due to disease or predation.</li>
+                        <li> There is an inadequacy of existing regulatory mechanisms.</li>
+                        <li> There are other natural or manmade factors affecting its continued existence.</li>
+                    </ol>
+                    <p>Potential candidate species are then prioritized, with "emergency listing" given the highest priority. Species that face a "significant risk to their well being" are in this category.</p>
+                </div>
+                <hr class="break">
+                
+                <div id="pen">
+                    <h3>Violation<sup><a href="#my-footer">[6]</a></sup></h3>
+                    <p>There are different degrees of violation with the law. The most punishable offenses are trafficking, and any act of knowingly "taking" (which includes harming, wounding, or killing) an endangered species.</p>
+                       
+                    <p>The penalties for these violations can be a maximum fine of up to $50,000 or imprisonment for one year, or both, and civil penalties of up to $25,000 per violation may be assessed. Lists of violations and exact fines are available through the National Oceanic and Atmospheric Administration web-site.</p>
+
+                    <p>One provision of this law is that no penalty may be imposed if, by a preponderance of the evidence that the act was in self-defense. The law also eliminates criminal penalties for accidentally killing listed species during farming and ranching activities.</p>
+
+                    <p>In addition to fines or imprisonment, a license, permit, or other agreement issued by a federal agency that authorized an individual to import or export fish, wildlife, or plants may be revoked, suspended or modified. Any federal hunting or fishing permits that were issued to a person who violates the ESA can be canceled or suspended for up to a year.</p>
+                </div>
+                <hr class="break">
+                
+                <div id="SS">
+                    <h3> Success</h3>
+                    <p>Two examples of this act being successful are the North island Brown Kiwi and the Common Watersnake. Through extensive habitat restoration and restriction on hunting, their numbers increased enough to be pulled from the list.</p>
+                </div>
+
+            </div>
+            
+            <div class="item4"></div>
+            
+            
+            <div class="item3" id="extra">
+                <h2>Major Amendments</h2>
+                <hr>
+                
+                <h3>Endangered Species Act Amendments of 1978<sup><a href="#my-footer">[II]</a></sup></h3>
+                <p>Passed by the 95th United States Congress in 1978 to "introduce some flexibility into the Endangered Species Act."</p>
+                <p>The amendment clarified the ESA of 1973 in many ways, including clearly defining the term critical habitat, clearly defining penalties for non-compliance and determining the future appropriation of funds. The most important change that was brought about by the 1978 amendment was the creation of the Endangered Species Committee, known as the "God Squad" because of the substantial impact of its decisions on the natural world.</p>
+                <hr class=break>
+                <h3>Amendments that were major enough to be mentioned but not major enough to be explained</h3>
+                <br>
+                <br>
+                <h4>Pub. L. 96-159<sup><a href="#my-footer">[7]</a></sup></h4>
+                <p>An act to authorize appropriations to carry out the Endangered Species Act of 1973 during fiscal years 1980, 1981, and 1982, and for other purposes.</p>
+                <br>
+                <br>
+                <h4>Pub. L. 97-304<sup><a href="#my-footer">[8]</a></sup></h4>
+                <p>A bill to authorize appropriations to carry out the Endangered Species Act of 1973, as amended, through fiscal year 1984; An act to authorize appropriations to carry out the provisions of the Endangered Species Act of 1973 for fiscal years 1983, 1984, and 1985, and for other purposes.</p>
+            </div> 
+            
+            <br>
+            <br>
+        </div>
+        
+        <footer class="footer" id="my-footer">
+            <div class="dr">
+                <h2>Direct References:</h2>
+                <ol style="font-size: 80%; float: left; margin-left: -10px">
+                    <li><a href="https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973" target="_blank">Opening Paragraph</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973#Endangered_Species_Preservation_Act_of_1966" target="_blank">Endangered Species Preservation Act of 1966</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973#Endangered_Species_Conservation_Act_of_1969" target="_blank">Endangered Species Conservation Act of 1969</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973#Endangered_Species_Act_of_1973" target="_blank">Endangered Species Act of 1973</a></li>                    
+                </ol>
+                <ol style="font-size: 80%; float: right;margin-left: -10px; margin-right: 100px" start="5">
+                    <li><a href="https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973#Petition_and_listing" target="_blank">Petition and listing</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973#Penalties" target="_blank">Violation</a></li>
+                    <li><a href="https://uslaw.link/citation/stat/93/1225" target="_blank">Public Law 96-159</a></li>
+                    <li><a href="https://uslaw.link/citation/stat/96/1411" target="_blank">Public Law 97-304</a></li>
+                </ol>
+      
+      
+            </div>
+            <div class="vl" style="height: inherit"></div>
+
+            <div class="foot4">
+                <h2>Other Sources:</h2>
+                <ol style="list-style-type: upper-roman">
+                    <li><a href="https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973" target="_blank">https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973" target="_blank">https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973</a></li>
+                </ol>
+            </div>
+            
+            <div class="vl" style="height: inherit"></div>
+    
+            <div class="foot4">
+                <h2>How You Can Help:</h2>
+                <ul style="list-style-type: square">
+                    <li><a href="https://support.nwf.org/page/21250/donate/1?ea.tracking.id=SRC&gclid=EAIaIQobChMIla_Z_Y-c7gIVlN7ICh3SpQT4EAAYASAAEgJE_vD_BwE" target="_blank">Donate!</a></li>
+                    <li><a href="https://www.endangered.org/15-ways-to-help-protect-endangered-species/" target="_blank">15 Ways</a></li>
+                    <li><a href="https://bestlifeonline.com/how-to-help-endangered-species/" target="_blank">Small Things</a></li>
+                </ul>
+            </div>
+
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>October</title>
+    <link rel="icon" href="https://i.ibb.co/DGS2b8k/pack.png">
+    
+<style>
+    body {
+        background-image: url('https://i.ibb.co/jRgzW4R/autumn-3707016-1280.jpg');
+        background-size: cover;
+    }
+    
+    .grid-container {
+        border-radius: 25px;
+        float: left;
+        
+    }
+    
+    .grid-container:not(#header) {
+        display: grid;
+        grid-template-columns: 160px 160px 160px 160px 160px 160px 160px;
+        grid-template-rows: 160px 80px 160px 160px 160px 160px 160px 160px ;
+        padding: 10px;
+    } 
+    
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 30px;
+    }
+    
+    .grid-item:hover {
+        background-color: rgba(91, 72, 72, 0.5);
+    }
+    
+    #header {
+        background-color: rgba(255, 255, 255, 0.5);
+        grid-column-start: 1;
+        grid-column-end: 8;
+        grid-template-rows: 80px;
+        grid-template-columns: 80px;
+        padding: 20px;
+        text-align: center;
+        border: 2px solid #000;
+        border-top-right-radius: 15px;
+        -moz-border-top-rightradius: 15px;
+        border-top-left-radius: 15px;
+        -moz-border-top-left-radius: 15px;
+    }
+    
+    #bottomRight {
+         border-bottom-right-radius: 15px;
+        -moz-border-bottom-right-radius: 15px;
+    }
+    
+    #bottomLeft {
+         border-bottom-left-radius: 15px;
+        -moz-border-bottom-left-radius: 15px;
+    }
+    
+    .month {
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 30px;
+    }
+    
+    .cell {
+        font-size: 50%;
+        vertical-align: top;
+        text-align: center;
+    }
+    
+    #sep {
+        color: gray;
+    }
+    
+    #pump {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+    
+    #skeleSpook {
+    
+        width: 225px;
+        float: left;
+    }
+    
+    #otherSpook {
+        width: 225px;
+        float: right;
+            -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    
+    #monthBig {
+        float: left;
+        margin-left: 150px;
+    }
+    
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+    
+    <div class="grid-item" id="header">
+         
+        <img id="skeleSpook" src="https://i.ibb.co/ygVwVJ9/image.png" alt="image" border="0">
+        <h1 id="monthBig">OCTOBER</h1>
+        <img id="otherSpook" src="https://i.ibb.co/ygVwVJ9/image.png" alt="image" border="0">
+    
+    </div>
+    <div class="month" id="month">Sun</div>
+    <div class="month" id="month">Mon</div>
+    <div class="month" id="month">Tue</div>
+    <div class="month" id="month">Wed</div>
+    <div class="month" id="month">Thu</div>
+    <div class="month" id="month">Fri</div>
+    <div class="month" id="month">Sat</div>
+    <div class="grid-item" id="sep">27</div>
+    <div class="grid-item" id="sep">28</div>
+    <div class="grid-item" id="sep">29</div>
+    <div class="grid-item" id="sep">30</div>
+    <div class="grid-item">1<p class="cell"></div>
+    <div class="grid-item">2<p class="cell"></div>
+    <div class="grid-item">3<p class="cell"></div>  
+    <div class="grid-item">4<p class="cell"></div>
+    <div class="grid-item">5<p class="cell"></div>
+    <div class="grid-item">6<p class="cell"></div>  
+    <div class="grid-item">7<p class="cell"></div>
+    <div class="grid-item">8<p class="cell"></div>
+    <div class="grid-item">9<p class="cell"></div>
+    <div class="grid-item">10<p class="cell"></div>
+    <div class="grid-item">11<p class="cell"></div>
+    <div class="grid-item">12<p class="cell">
+        <table>
+            <tr>
+                <th>Columbus Day </th>
+            </tr>
+        </table>
+    </div>
+    <div class="grid-item">13<p class="cell"></p></div>
+    <div class="grid-item">14<p class="cell"></p></div>
+    <div class="grid-item">15<p class="cell"></p></div>
+    <div class="grid-item">16<p class="cell"></p></div>
+    <div class="grid-item">17<p class="cell"></p></div>
+    <div class="grid-item">18<p class="cell"></p></div>
+    <div class="grid-item">19<p class="cell"></p></div>
+    <div class="grid-item">20<p class="cell"></p></div>
+    <div class="grid-item">31<p class="cell"></p></div>
+    <div class="grid-item">22<p class="cell"></p></div>
+    <div class="grid-item">23<p class="cell"></p></div>
+    <div class="grid-item">24<p class="cell"></p></div>
+    <div class="grid-item" id = "bottomLeft"25>25</div>
+    <div class="grid-item">26<p class="cell"></p></div>
+    <div class="grid-item">27<p class="cell"></p></div>
+    <div class="grid-item">28<p class="cell"></p></div>
+    <div class="grid-item">29<p class="cell"></p></div>
+    <div class="grid-item">30<p class="cell"></p></div>
+    <div class="grid-item" id="bottomRight">31<p class="cell">Halloween</p><img id="pump" src="smilePumpSmoler.png"></div>
+    
+</div>
+
+</body>
+</html> 

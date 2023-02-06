@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>White Space Preservation</title>
+        <style>
+        
+            * {
+                align-content: center;
+                text-align: center;
+            }
+            
+            body {
+                background-color: /* Put a color here*/;
+                color: /* Put a color here also*/;
+            }
+            
+            li {
+                list-style: none;
+                margin-left: -50px;
+            }
+            
+            h1 {
+                font-size: 500%;
+                text-decoration: underline;
+                font-style: italic;
+                font-family: sans-serif;
+            }
+            
+            img {
+                width: 250px;
+                height: 250px;
+            }
+            
+            #a {float: left}
+            #b {float: right}
+        
+        </style>
+        
+        
+    </head>
+
+    <body>
+        <a href="https://www.w3schools.com/charsets/ref_emoji.asp">Emoji Reference Sheet</a>
+        <pre>
+            <!-- Replace the # with the image files-->
+            <img id="a" src=" # ">
+            <img id="b" src=" # ">
+            <h1>Schedule</h1>
+            
+            <ol>
+                <li>Per. 1 - //Class One//</li>
+                <li>Per. 2 - //Class Two//</li>
+                <li>Per. 3 - //Class Three//</li>
+                <li>Per. 4/5 - //Class Four//</li>
+                <li>Per. 6/7 - //Class Five//</li>
+                <li>Per. 8/9 - //Class Six//</li>
+                <li>Per. 11 - //Class Seven//</li>
+                <li>Per. 12 - //Class Eight//</li>
+            </ol>
+        
+        
+        </pre>
+        
+    </body>
+
+</html>

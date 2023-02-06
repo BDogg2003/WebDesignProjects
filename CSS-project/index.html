@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head lang="en-US">
+        <title>CSS Project</title>
+        <link rel="icon" href="https://i.ibb.co/DGS2b8k/pack.png">
+        <meta charset="UTF-8">
+      
+        <style>
+      
+            * {
+                font-size: 115%;
+            }
+            
+
+            body {
+              background: linear-gradient(328deg, rgba(124,26,58,1) 0%, rgba(85,18,49,1) 24%, rgba(62,13,44,1) 41%, rgba(16,3,33,1) 59%, rgba(10,11,46,1) 79%, rgba(0,26,68,1) 100%);
+              background-repeat: no-repeat;
+            }
+            
+            body:not(#pc) {
+                color: coral;
+            } 
+          
+            p {
+                text-indent: 5%;
+            }
+            
+            h1, h3 {
+                text-decoration: underline;
+                text-shadow: 2px 2px 5px gray;
+                font-style: oblique;
+                text-decoration: underline;
+            }
+            
+            h1 {
+                font-size: 300%;
+                text-align: center;
+                letter-spacing: 5px;
+            }
+            
+            h3 {
+                font-size: 130%;
+                font-weight: bold;
+            }
+            
+            h4 {
+                text-decoration: underline;
+            }
+            
+            sup {
+                font-size: 50%;
+            }
+            
+            .rt {
+                background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   
+                    -webkit-background-clip: text;
+                color: transparent;
+            }
+            
+            ul.pro, h4.pro {
+                color: #39FF14;
+            }
+            
+            ul.con, h4.con {
+                color: crimson;
+            }
+            
+            .ulPro {
+                min-width: 900px;
+                max-width: 900px;
+            }
+            
+            .ulCons {
+                min-width: 900px;
+                max-width: 900px;
+                
+            }
+            
+            .inLine {
+                display: inline-grid;
+                grid-template-rows: auto auto;
+                grid-template-columns: auto auto;
+            }
+            
+            #item1 {
+                
+                grid-column: 1 / span 2;
+                text-align: center;
+            }
+            
+            li#check {
+                list-style-image: url('https://i.ibb.co/TmyxvFH/check.png alt="clipart11037');
+            }
+            
+            li#x {
+                list-style-image: url(https://i.ibb.co/ngkR1Nr/x.png);
+            }
+            
+            #text {
+                list-style-type: none;
+                font-size: 75%;
+                text-indent: 50px;
+            }
+            
+            #wrapper {
+                border-style: groove;
+                border-radius: 50px;
+                margin-left: 3px
+            }
+            
+            #main {
+                margin-left: 10px;
+            }
+            
+            #duck1 {
+                float: left;
+            }
+            
+            #duck2{
+                float: right;
+            }
+            
+            @keyframes topLeft {
+                0% {left:50px; top:0px;}
+                33.33% {left:1750px; top:0px;}
+                50% {left:1750px; top:243px;}
+                83.33% {left:50px; top:243px;}
+                100% {left:50px; top:0px;}
+            }
+            
+            #duck1 {
+                position: relative;
+                animation-name: topLeft;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            
+            @keyframes bottomRight {
+                0% {right:0px; bottom:0px;}
+                33.33% {right:1750px; bottom: 0px}
+                50% {right:1750px;bottom:243px;}
+                83.33% {right:0px;bottom:243px;}
+                100% {right:0px; bottom:0px;}
+                 
+            }
+            
+             #duck2 {
+                position: relative;
+                 -webkit-transform: scaleX(-1);
+                animation-name: bottomRight;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            
+        </style>
+      
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="main">
+        
+          <h1> My Experiences With Remote Learning</h1>
+         <div id="OE">
+          <h3>Overall Experiences.</h3>
+      
+          <p>Remote learning... hasn't been fun for me. I have moderate ADHD, which means focusing is <em>extremely</em> difficult. I'm behind in most of my classes, and haven't been able to get much work done.</p>
+         </div>
+          
+          <div id="daily">
+           <h3>Average Day</h3>
+              
+              <p>My average day honestly isn't anything special. I have 3 alarms set from 7am to 7:30am which I ignore. I get out of bed around 8am, and make a quick breakfast.  After that, there's just school. I try my best to get assignments done and not get distracted. After school's over, I spent the next 3 hours attempting to do my homework. <sup>(see: staring at paper for 3 hours and/or getting distracted.)</sup></p>
+              
+          </div>
+          <div  class="inLine" id="pc">
+            <div id="item1"> <!-- 1800 x 303 -->
+            <img id="duck1" src="clipart-walking-gif-animation-16-original.gif" alt="waddle waddle" style="width:50px;height:60px;">
+            <h3>The Pros and Cons of Remote Learning</h3>
+              
+            <p>Remote Learning has many pros and many cons.</p>
+                
+            <img id="duck2" src="clipart-walking-gif-animation-16-original.gif" alt="waddle waddle" style="width:50px;height:60px;">
+              </div>
+             <div class="ulPro"> 
+                <h4 class="pro">&#9989;Pros:</h4>
+                <ul class="pro">
+                    <li id="check">Time</li>
+                     <li id="text">Because of remote learning, the shcool has switched to block schedualing. This means we generally have more time to complete assignments.</li>
+                    <li id="check">A and B days</li>
+                     <li id="text"></li>
+                    <li id="check">We can wake up later</li>
+                     <li id="text"> </li>
+                </ul>
+             </div>
+             <div class="ulCons">
+                 <h4 class="con">&#10060;Cons:</h4>
+                <ul class="con">
+                    <li id="x">Time</li>
+                     <li id="text">Due to the increase in time we have to complete assignments, incentive to do those assignments on time decreases. Makes it harder to do work with adhd.</li>
+                    <li id="x">Bad enviorment</li>
+                     <li id="text"></li>
+                    <li id="x">Can't focus</li>
+                     <li id="text"></li>
+                </ul>
+             </div>
+          </div>
+      </div>
+    </div>
+      
+      
+     <!-- <div>
+            
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+      </div> -->
+      
+      <script>
+          let box = document.getElementById('item1');
+          let width = box.clientWidth;
+          let height = box.clientHeight;
+          console.log(width);
+          console.log(height);
+      </script>
+      
+  </body>
+</html>

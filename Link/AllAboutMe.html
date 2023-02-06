@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head> 
+        <title>All About Me</title>
+        <link rel="icon" href="https://i.ibb.co/DGS2b8k/pack.png">
+        <link rel="stylesheet" href="!Navi_Bar.css">
+    <style>
+        
+        * {
+            color: white;
+            font-family: cursive;
+        }
+        
+        body {
+            background-color: #333;
+            background-image: linear-gradient(black, black, silver);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            text-shadow: 2px 2px 15px red;
+        }
+        
+        h2 {
+            margin-left: 0;
+            text-decoration: underline;
+        }
+        
+        hr {
+            border-width: 3px;
+            width: 50%;
+        }
+        
+        ul {
+            list-style-type:disc;
+        }
+        
+        .dog {
+            color: aqua;
+        }
+        
+        li.para {
+            color: lightgreen;
+            list-style-type: none;
+            margin-left: 30px
+        }
+        
+        div.clock {
+            float: right;
+        }
+        
+        div.list {
+            float:left;
+          	max-width: 75%;
+        }
+        
+         a {
+            color: aqua;
+        }
+        
+       #wrapper { 
+            width: auto;
+            height: auto;
+            margin-right: 40px;
+            margin-left: 40px;
+            background-color: #001a44;
+            border: solid 1px black;
+            border-radius: 25px 30px;
+            font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+            overflow: hidden;
+        } 
+        
+      	#dogs {
+            width: 250;
+          	display: block;
+  		    margin-left: auto;
+  		    margin-right: auto;
+        }
+        
+      	#ttk {
+        		text-align: center;
+        }	
+        
+        #pic1 {
+            float: left;
+        }
+        
+        #pic2 {
+            float: right;
+        }
+        
+        #worm {
+            float:left;
+            height: 200px;
+            width: 200px;
+            margin-left: 100px;
+        }
+        
+        #starWars {
+            float:right;
+            height: 200px;
+            width: 200px;
+            margin-right: 100px;
+        }
+        
+        .pictures {
+            border-radius: 25px;
+        }
+        
+        li:not(.para) {
+            font-style: italic;
+            font-weight: bold;
+        }
+        
+        
+        
+        
+    </style>
+    
+    </head>
+    <body>
+        <div id="wrapper">
+            
+            <nav>
+                <ul class="bar"> 
+                    <li class="navi"><a class="active" href="AllAboutMe.html">All About Me</a></li>
+                    <li class="navi"><a href="halloween.html">Halloween</a></li>
+                    <li class="navi"><a href="RemoteLearning.html">Remote Learning</a></li>
+                </ul>
+            </nav>
+    		    
+            <Marquee id="dogs" width="250"> <!-- Marquee done.-->
+            
+                <a class="dog" href="https://ibb.co/album/tByYxC">Look at my Dogs!!!</a>
+                <a class="dog" href="https://ibb.co/album/tByYxC">Look at my Dogs!!!</a>
+                <a class="dog" href="https://ibb.co/album/tByYxC">Look at my Dogs!!!</a>
+                <a class="dog" href="https://ibb.co/album/tByYxC">Look at my Dogs!!!</a>
+                <a class="dog" href="https://ibb.co/album/tByYxC">Look at my Dogs!!!</a>
+                <a class="dog" href="https://ibb.co/album/tByYxC">Look at my Dogs!!!</a>
+                <a class="dog" href="https://ibb.co/album/tByYxC">Please look at my Dogs!!!</a>
+                <a class="dog" href="https://ibb.co/album/tByYxC">Look at my Dogs!!!</a>
+            
+            </Marquee>
+        
+    <h1>A Guide to The Ins and Outs of the Anomoly that is Me</h1> 
+    
+    <div id="pic1">
+              
+        <img class="pictures" id="worm" src="https://i.ibb.co/ZmWLxPF/image.png" alt="image" border="0">
+        
+    </div>
+              
+    <div id="pic2">
+
+        <img class="pictures" id="starWars" src="https://i.ibb.co/1G11C4N/image.png" alt="image" border="0">
+    
+    </div>
+              
+    <div id="ttk">
+     
+        <h2>Things to know:</h2>
+        
+            <p><u> Name:</u></b> Hayden M. Brower</p>
+            <p><u> Place/Date of Birth:</u></b> Spootswood, NJ, on December 5th, 2003.
+            <p><u> Siblings:</u></b> 3 siblings; 1 brother in 5th grade and 2 sisters in freshman year.</p>
+            <br>
+            <hr>
+            <br>
+            <br>
+    </div>
+
+          </head>
+        <div class="list">
+                <ul> <h2>Hobbies</h2>
+                    <li>Video games</li>
+                    <li class="para">Growing up, I was never athletic. As such, my attention turned to things I could do alone. Videogames fit the description very quickly. Some of favorites are <a href="https://www.minecraft.net/en-us">Minecraft</a>, <a href="https://terraria.org/">Terraria</a>, and Destiny 2.</li>
+                    <li>Coding</li>
+                    <li class="para">I'm planning on majoring in computer science in college. I also enjoy coding as a whole, I've wanted to do this since I was a kid. Now that I can, and I'm learning how, it's fun to do in my free time every now and again.</li>
+                    <li>Reading/Editing</li>
+                    <li class="para">There isn't much to say about this one. While I don't read many traditional books, my friend writes, so I help them spellcheck it and give them ideas to help. It's a fun way to pass time, and it helps me keep my reading skills sharp.</li>
+                </ul>
+        </div>
+        
+        <div class="clock">
+        <canvas id="clock" width="400" height="400" style="background-color: rgba(255,0,0,0)"></canvas>
+
+            <script>
+               var clock = document.getElementById("clock");
+               var ctx = clock.getContext("2d");
+               var radius = clock.height / 2;
+               ctx.translate(radius, radius);
+               radius = radius * 0.90
+               drawClock();
+               
+               function drawClock() {
+                 drawFace(ctx, radius);
+                 drawNumbers(ctx, radius);
+                 drawTime(ctx, radius);
+               }              
+               
+               function drawFace(ctx, radius) {
+                 var grad;
+                   
+                 ctx.beginPath();
+                 ctx.arc(0, 0, radius, 0, 2*Math.PI);
+                 ctx.fillStyle = 'white';
+                 ctx.fill();
+                 grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+                 grad.addColorStop(0, '#333');
+                 grad.addColorStop(0.5, 'white');
+                 grad.addColorStop(1, '#333');
+                 ctx.strokeStyle = grad;
+                 ctx.lineWidth = radius*0.1;
+                 ctx.stroke();
+                 ctx.beginPath();
+                 ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+                 ctx.fillStyle = '#333';
+                 ctx.fill();
+               }
+                   
+               function drawNumbers(ctx, radius) {
+                 var ang;
+                 var num;
+                 ctx.font = radius * 0.15 + "px arial";
+                 ctx.textBaseline = "middle";
+                 ctx.textAlign = "center";
+                   
+                 for(num = 1; num < 13; num++){
+                   ang = num * Math.PI / 6;
+                   ctx.rotate(ang);
+                   ctx.translate(0, -radius * 0.85);
+                   ctx.rotate(-ang);
+                   ctx.fillText(num.toString(), 0, 0);
+                   ctx.rotate(ang);
+                   ctx.translate(0, radius * 0.85);
+                   ctx.rotate(-ang);
+                 }
+               }
+                   
+               function drawTime(ctx, radius){
+                 var now = new Date();
+                 var hour = now.getHours();
+                 var minute = now.getMinutes();
+                 var second = now.getSeconds();
+                 //hour
+                 hour = hour%12;
+                 hour = (hour*Math.PI/6)+(minute*Math.PI/(6*60))+(second*Math.PI/(360*60));
+                 drawHand(ctx, hour, radius*0.5, radius*0.07);
+                 //minute
+                 minute = (minute*Math.PI/30)+(second*Math.PI/(30*60));
+                 drawHand(ctx, minute, radius*0.8, radius*0.07);
+                 // second
+                 second = (second*Math.PI/30);
+                 drawHand(ctx, second, radius*0.9, radius*0.02);
+               }
+               
+               function drawHand(ctx, pos, length, width) {
+                 ctx.beginPath();
+                 ctx.lineWidth = width;
+                 ctx.lineCap = "round";
+                 ctx.moveTo(0,0);
+                 ctx.rotate(pos);
+                 ctx.lineTo(0, -length);
+                 ctx.stroke();
+                 ctx.rotate(-pos);
+               }
+                   
+                   //draw clock
+                   setInterval(drawClock, 1000);
+            </script>
+        
+        </div>
+        
+    </body>
+
+</html>

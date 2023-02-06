@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Endangered and Threatened Animals</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="Big_Boi.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="https://i.ibb.co/bXXfDQY/ruby2.png">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    
+    <style>
+        .vl {
+            border-left: 3px solid black;
+            left: 50%;
+            margin-left: -3px;
+            top: 0;
+        }
+    </style>
+    
+    <script>
+            function display() {
+                
+                var x;
+                
+                if(window.innerWidth <= 690) {
+                     x = "Phone Media";
+                } else if(window.innerWidth <= 950) {
+                   x = "Tablet Media";
+                } else {
+                   x = "Normal Media";
+                }
+                document.getElementById("dim").innerHTML = x + ": " + window.innerHeight + "x" + window.innerWidth;
+                
+                
+            }
+        
+    </script>
+</head>
+<body>
+    
+<nav class="nav-wrapper">
+  <div style="width: 2px;"><img src="https://i.ibb.co/bXXfDQY/ruby2.png" style="float: left; width: 50px; height: 50px;"> </div>
+
+  <ul class="nav-items main-nav mobile-hide">
+    <li class="list-item"><a href="!Page_1-Home.html" class="active">Home</a></li>
+    <li class="list-item"><a href="!Page_2-ESA.html">Endangered Species Act</a></li>
+    <li class="list-item"><a href="!Page_3-Okapi.html">Endangered Profile: Okapi</a></li>
+    <li class="list-item"><a href="!Page_4-Kakapo.html">Endangered Profile: Kakapo</a></li>
+
+  </ul>
+</nav>
+<div class="main-wrapper">
+  <div class="wrapper">
+    <div class="featured">
+      <div id="meta"></div>
+      <h1>A small infographic on Threatened and Endangered Animals</h1>
+      <span id="hero-date">Jan 11, 2021</span>
+    </div>
+    <div class="sub-featured">
+      <div class="sub1" id="heading">
+          <h4 style="margin-left: -10px">Counts of Endangered/Threatened Animals<sup><a href="#my-footer">[I]</a></sup></h4>
+      </div>
+      <div class="sub1">
+        <h3>United States:</h3>
+          <ul>
+            <li>Nearly Threatened Species: 222</li>
+            <li>Endangered Species: 501</li>
+          </ul>
+      </div>
+      <div class="sub2">
+        <h3>Foreign Countries:</h3>
+        <ul>
+            <li>Nearly Threatened Species: 95</li>
+            <li>Endangered Species: 596</li>
+        </ul>
+      </div>
+      <div class="sub3">
+        <h3>Total:</h3>
+        <ul>
+            <li>Nearly Threatened Species: 317</li>
+            <li>Endangered Species: 1097</li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <div>
+        <h2 style="text-decoration: underline">Nearly Threatened:</h2>
+        <p>The classification of "Near Threatened" refers to species that could be threatened with extinction in the near future, but don't currently qualify for it. According to Wikipedia, "The rationale used for near-threatened [species] usually includes the criteria of vulnerabilities, which are plausible or nearly met, such as reduction in numbers or range."<sup><a href="#my-footer">[1]</a></sup></p>
+            
+        <p>In laymen's terms, they're species that are on the brink of being threatened, but are barely scraping by.</p>
+      </div>
+        
+        <div class="vl"></div>
+        
+      <div>
+        <h2 style="text-decoration: underline">Endangered:</h2>
+          
+          <p>The classification "Endangered" refers to species that are very likely to become extinct in the near future. According to Wikipedia, possible causes of getting to this classification include "habitat loss, poaching and invasive species"<sup><a href="#my-footer">[2]</a></sup>.</p>
+          
+          <p>Many nations have different laws that protect these species. These laws do things such as forbid hunting, making protected areas, or restricting land development. Some endangered species are actively being helped with methods like captive breeding and habitat restoration.</p>
+      </div>  
+        <p style="font-size: 60%"><i>*Claims here are based off of the IUCN Red List of Threatened Species</i></p>
+    </div>
+    <div class="main-sidebar">
+      <div class="email-digest-subscription">
+        <h2 style="text-decoration: underline;">Conservation Status</h2>
+        
+        <p>All groups of organisms (like species) are categorized by something called Conservation Status. A species conservation status indicated whether it still exists and/or how likely it is to become extinct in the near future. Many factors are taken into account when assessing conservation status: not simply the number of individuals remaining, but the overall increase or decrease in the population over time, breeding success rates, and known threats. Various systems of conservation status exist and are in use at international, multi-country, national and local levels as well as for consumer use<sup><a href="#my-footer">[3]</a></sup>.</p>
+          
+      </div>
+    </div>
+  </div>
+</div>
+    <br>
+    <br>
+<footer class="footer" id="my-footer">
+  <div class="dr">
+      <h2>Direct References:</h2>
+      <ol>
+        <li><a href="https://en.wikipedia.org/wiki/Near-threatened_species" target="_blank">https://en.wikipedia.org/wiki/Near-threatened_species</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Endangered_species" target="_blank">https://en.wikipedia.org/wiki/Endangered_species</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Conservation_status" target="_blank">https://en.wikipedia.org/wiki/Conservation_status</a></li>
+      </ol>
+      
+      
+  </div>
+  <div class="vl" style="height: 150px"></div>
+
+  <div class="foot3">
+    <h2>Other Sources:</h2>
+      <ol style="list-style-type: upper-roman">
+        <li><a href="https://ecos.fws.gov/ecp/report/boxscore" target="_blank">https://ecos.fws.gov/ecp/report/boxscore</a></li>
+      </ol>
+      
+<!--      <button onclick=display();>Window Size Check</button>  -->
+                
+      <p id="dim" style="display: inline"></p>
+  </div>
+    
+  <div class="vl" style="height: 150px"></div>
+    
+  <div class="foot4">
+    <h2>How You Can Help:</h2>
+      <ul style="list-style-type: square">
+        <li><a href="https://support.nwf.org/page/21250/donate/1?ea.tracking.id=SRC&gclid=EAIaIQobChMIla_Z_Y-c7gIVlN7ICh3SpQT4EAAYASAAEgJE_vD_BwE" target="_blank">Donate!</a></li>
+        <li><a href="https://www.endangered.org/15-ways-to-help-protect-endangered-species/" target="_blank">15 Ways</a></li>
+          <li><a href="https://bestlifeonline.com/how-to-help-endangered-species/" target="_blank">Small Things</a></li>
+      </ul>
+  </div>
+
+</footer>
+</body>
+</html>

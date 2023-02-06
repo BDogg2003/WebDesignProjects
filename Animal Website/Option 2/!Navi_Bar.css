@@ -1,0 +1,44 @@
+.bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  border: 0px solid #111;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(157, 0, 157, 1)) border-box;
+}
+
+.navi {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:aqua;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:cursive;
+  font-weight: bold;
+}
+
+li a:hover:not(.active) {
+  background-color: #660066;
+}
+
+.active {
+  background-color: #340835;
+}
+
+a:hover, a.active {
+            color: chartreuse;
+}
+
+/*
+<nav>
+    <ul class="bar"> 
+        <li class="navi"><a class="active" href="#"> Page 1 </a></li>
+        <li class="navi"><a href="#"> Page 2 </a></li>
+        <li class="navi"><a href="#"> Page 3 </a></li>
+    </ul>
+</nav>
+*/

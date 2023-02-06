@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Endangered and Threatened Animals</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="Big_Boi.css">
+    <link rel="stylesheet" href="Okapi.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="https://i.ibb.co/bXXfDQY/ruby2.png">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    
+    <style>
+        .vl {
+            border-left: 3px solid black;
+            left: 50%;
+            margin-left: -3px;
+            top: 0;
+        }
+    </style>
+    
+    <script>
+            function display() {
+                
+                var x;
+                
+                if(window.innerWidth <= 690) {
+                     x = "Phone Media";
+                } else if(window.innerWidth <= 950) {
+                   x = "Tablet Media";
+                } else {
+                   x = "Normal Media";
+                }
+                document.getElementById("dim").innerHTML = x + ": " + window.innerHeight + "x" + window.innerWidth;
+                
+                
+            }
+        
+    </script>
+</head>
+
+<body>
+    
+    <nav class="nav-wrapper">
+        <div style="width: 2px;"><img src="https://i.ibb.co/bXXfDQY/ruby2.png" style="float: left; width: 50px; height: 50px;"> </div>
+
+        <ul class="nav-items main-nav mobile-hide">
+            <li class="list-item"><a href="!Page_1-Home.html">Home</a></li>
+            <li class="list-item"><a href="!Page_2-ESA.html">Endangered Species Act</a></li>
+            <li class="list-item"><a href="!Page_3-Okapi.html" class="active">Endangered Profile: Okapi</a></li>
+            <li class="list-item"><a href="!Page_4-Kakapo.html">Endangered Profile: Kakapo</a></li>
+
+        </ul>
+    </nav>
+<!--    -->
+    <div class="grid-container">
+        <div class="pic"> 
+            <img id="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg/1280px-Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg">
+            <small><center><em>Male Okapi in captivity at ZooParc de Beauval<sup><a href="#my-footer">[1]</a></sup></em></center></small>
+        </div>
+        
+        <div class="sci">
+            <ul style="list-style-type: none; float: left">
+                <li>Scientific Name: Okapia johnstoni</li>
+                <li>Common Name: Okapi</li>
+                <li>Other Names: 
+                    <ul style="list-style-type: disc">
+                        <li> Forest giraffe </li>
+                        <li> Congolese giraffe</li>
+                        <li> Zebra giraffe</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <table id="info" style="float: right">
+                <tr id="info">
+                    <td id="info">Population:</td>
+                    <td id="info">25,000</td>
+                </tr>
+                <tr id="info">
+                    <td id="info">Average Lifespan:</td>
+                    <td id="info">20-30 years</td>
+                </tr>
+                <tr id="info">
+                    <td id="info">Family:</td>
+                    <td id="info"><a href="https://en.wikipedia.org/wiki/Giraffidae" target="_blank"> Giraffidae</a></td>
+                </tr>
+                <tr id="info">
+                    <td id="info">Avg. Litter Size:</td>
+                    <td id="info">1</td>
+                </tr>
+                
+            </table>
+        </div>
+        
+        <div class="main">
+            
+<!--    
+        +Physical description (Ex. height, weight, color, etc.)
+        +Life span 
+        +population numbers 
+        +reproduction statistics
+        +Habitat
+            +include the countries in which these animals reside
+        +Diet
+        -Legal status / protection
+            —include how long your animal has been classified under this act, and whether or not your animal is threatened or endangered
+        -Pictures
+        -Any other interesting facts 
+-->
+            <h1>The Okapi</h1>
+            
+            <h3>Physical Description</h3>
+            <p>The Okapi is a quadrupedal mammal with patterns similar to that of a zebra. The Okapi has an average height of 4.9ft and an average body length of 8.2ft and weighs in the range of 440-770 pounds. Typical characteristics include a long neck and large, flexible ears.</p>
+            <p>Its coat colors can range from chocolate to reddish-brown, with white stripes and rings on the legs and ankles.The males have short horn-like protrusions on their head called ossicones that are around 5.9 inches in length while the females have hair whorls.</p>
+            
+            <h3>Reproduction Statistics</h3>
+            
+            <div>
+                <table style="float: left">
+                    <tr>
+                        <th></th>
+                        <th>Male</th>
+                        <th>Female</th>
+                    </tr>
+                    <tr>
+                        <th>Sexual Maturity Age<br><small>(years)</small></th>
+                        <td>2</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <th>Rut/Estrous</th>
+                        <td>Year Round</td>
+                        <td>Year Round</td>
+                    </tr>
+                    <tr>
+                        <th>Gestational Period<br><small>(days)</small></th>
+                        <td>N/A</td>
+                        <td>440-550</td>
+                    </tr>
+                </table>
+                <div class="mama">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Okapi_and_son.jpg/1024px-Okapi_and_son.jpg">
+                    <small><center><em>Okapi and son<sup><a href="#my-footer">[2]</a></sup></em></center></small>
+                </div>
+            
+            </div>
+            <div><br><br><br><br><br><br><br></div>
+            
+            <h3>Habitat</h3>
+            <p>The okapi is endemic to the Democratic Republic of the Congo, where it occurs north and east of the Congo River. It ranges from the Maiko National Park northward to the Ituri rainforest, then through the river basins of the Rubi, Lake Tele, and Ebola to the west and the Ubangi River further north. Smaller populations exist west and south of the Congo River. It is also common in the Wamba and Epulu areas. It is extinct in Uganda.<sup><a href="#my-footer">[3]</a></sup></p>
+            <p>The okapi inhabits canopy forests at altitudes of 500–1,500 m (1,600–4,900 ft). It occasionally uses seasonally inundated areas, but does not occur in gallery forests, swamp forests, and habitats disturbed by human settlements. In the wet season, it visits rocky inselbergs that offer forage uncommon elsewhere. Results of research conducted in the late 1980s in a mixed Cynometra forest indicated that the okapi population density averaged 0.53 animals per square kilometre.<sup><a href="#my-footer">[3]</a></sup></p>
+            
+            <h3>Diet</h3>
+            <p>Okapis are herbivorous, meaning they feed on solely on plant matter. They are unique in the Ituri Forest as they are the only known mammal that feeds solely on understory vegetation, where they use their 18-inch tongues to selectively browse for suitable plants. Their tounge is also used for perosnal upkeep and grooming.</p>
+            <p>They are known to feed on over 100 species of plants, some of which are posionious to humans and other animals. Staple foods comprise shrubs and lianas</p>
+            
+            <h3>Legal Status and Protection</h3>
+            <p>The IUCN classified the okapi as <b>endangered</b> in 2013 and still currently does, and it's fully protected under Congolese law. Wikipedia says, "The Okapi Conservation Project, established in 1987, works towards the conservation of the okapi... In November 2011, the White Oak Conservation center and Jacksonville Zoo and Gardens hosted an international meeting of the Okapi Species Survival Plan and the Okapi European Endangered Species Programme at Jacksonville, which was attended by representatives from zoos from the US, Europe, and Japan. The aim was to discuss the management of captive okapis and arrange support for okapi conservation. Many zoos in North America and Europe currently have okapis in captivity."<sup><a href="#my-footer">[4]</a></sup></p>
+            <p>Around 100 Okapis are in AZA zoos, which are zoos that are dedicated to, amoung other things, conservation of animals. Sources<sup><a href="#my-footer">[I]</a></sup> say that, "The okapi population is managed in America by the AZA's Species Survival Plan, a breeding program that works to ensure genetic diversity in the captive population of endangered animals."</p>
+            
+            <div class="mama2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Okapi2.jpg/1024px-Okapi2.jpg">
+                    <small><center><em>Okapi at Disney's Animal Kingdom<sup><a href="#my-footer">[5]</a></sup></em></center></small>
+            </div>
+            
+            <h3>Other Facts</h3>
+            <ul style="list-style-type: disc; padding-left: 30px">
+                <li style="padding-bottom: 20px;">Although the okapi has striped markings reminiscent of zebras, it is most closely related to the giraffe.</li>
+                <li style="padding-bottom: 20px;">The okapi and the giraffe are the only living members of the family Giraffidae.</li>
+                <li style="padding-bottom: 20px;">The stripes it has are a form of camouflage that helps them blend in while in partial sunlight.</li>
+                <li style="padding-bottom: 20px;">In Asia, only two zoos in Japan exhibit okapis; Ueno Zoo in Tokyo and Zoorasia in Yokohama.</li>
+               
+            </ul>
+            
+            
+            
+        </div> <!-- End of main div-->
+
+        
+        
+    </div> <!-- End of container div-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <footer class="footer" id="my-footer">
+        
+            <div class="dr">
+                <h2>Direct References:</h2>
+                <ol>
+                    <li><a href="https://en.wikipedia.org/wiki/File:Saint-Aignan_(Loir-et-Cher)._Okapi.jpg" target="_blank">Heading Image </a></li>     
+                    <li><a href="https://commons.wikimedia.org/wiki/File:Okapi_and_son.jpg" target="_blank">Okapi and Son</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Okapi#Distribution_and_habitat" target="_blank">Habitat Resources</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Okapi#Status" target="_blank">Status Paragraph</a></li>
+                    <li><a href="https://commons.wikimedia.org/wiki/File:Okapi2.jpg" target="_blank">Disney Okapi</a></li>
+                </ol>
+                
+                <!--        Uncomment below if more than 4 are needed      -->
+                
+<!--
+                <ol style="font-size: 80%; float: right;margin-left: -50px; margin-right: 100px" start="5">
+                    <li><a href="https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973#Petition_and_listing" target="_blank">Petition and listing</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Endangered_Species_Act_of_1973#Penalties" target="_blank">Violation</a></li>
+                    <li><a href="https://uslaw.link/citation/stat/93/1225" target="_blank">Public Law 96-159</a></li>
+                    <li><a href="https://uslaw.link/citation/stat/96/1411" target="_blank">Public Law 97-304</a></li>
+                </ol>
+-->
+      
+      
+            </div>
+            <div class="vl" style="height: inherit"></div>
+
+            <div class="foot4">
+                <h2>General Sources:</h2>
+                <ol style="list-style-type: upper-roman">
+                    <li><a href="https://en.wikipedia.org/wiki/Okapi" target="_blank">Wiki Page</a></li>
+                    <li><a href="https://animals.sandiegozoo.org/animals/okapi#:~:text=The%20secretive%20nature%20of%20okapis,25%2C000%20okapis%20in%20the%20wild." target="_blank">San Diego Zoo page</a></li>
+                    <li><a href="https://www.iucnredlist.org/species/15188/51140517" target="_blank">IUCN page</a></li>
+
+                </ol>
+            </div>
+            
+            <div class="vl" style="height: inherit"></div>
+    
+            <div class="foot4">
+                <h2>How You Can Help:</h2>
+                <ul style="list-style-type: square">
+                    <li><a href="https://support.nwf.org/page/21250/donate/1?ea.tracking.id=SRC&gclid=EAIaIQobChMIla_Z_Y-c7gIVlN7ICh3SpQT4EAAYASAAEgJE_vD_BwE" target="_blank">Donate!</a></li>
+                    <li><a href="https://www.endangered.org/15-ways-to-help-protect-endangered-species/" target="_blank">15 Ways</a></li>
+                    <li><a href="https://bestlifeonline.com/how-to-help-endangered-species/" target="_blank">Small Things</a></li>
+                </ul>
+            </div>
+
+        </footer>
+    
+</body>
+</html>

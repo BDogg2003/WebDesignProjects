@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    
+       
+    <canvas id="rect" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+         
+    <canvas id="line" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+        
+    <canvas id="circle" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+        
+    <canvas id="text1" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+        
+    <canvas id="text2" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+        
+    
+        
+        <script>
+function rect() {
+    //set up canvas
+    var rect = document.getElementById("rect");
+    var ctx = rect.getContext("2d");
+                
+    //set up gradient
+    var grd = ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0, "blue");
+    grd.addColorStop(1, "black");
+    
+    //Red Rectangle
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 0, 150, 75);
+}           
+            
+function line() {
+    //set up canvas
+    var line = document.getElementById("line");
+    var ctx = line.getContext("2d");
+        
+    //draw the line
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+}
+
+function circle() {
+    //set up canvas
+    var circle = document.getElementById("circle");
+    var ctx = circle.getContext("2d");
+    
+    //draw circle
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+}
+            
+function textFill() {
+    //set up canvas
+    var text = document.getElementById("text1");
+    var ctx = text.getContext("2d");
+    
+     //set up gradient
+    var grd = ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "black");
+    
+    //set up text
+    ctx.font = "30px Cursive";
+    ctx.fillStyle = grd;
+    ctx.textAlign = "left";
+    ctx.fillText("Hello World", 10, 50);
+}
+            
+function textStroke() {
+    //set up canvas
+    var text = document.getElementById("text2");
+    var ctx = text.getContext("2d");
+    
+    //set up text
+    ctx.font = "30px Cursive";
+    ctx.strokeText("Hello World", 10, 50);
+}
+            
+            
+function draw() {
+  rect();
+  line();
+  circle(); 
+  textFill();
+  textStroke();
+}
+
+draw();
+        </script>
+        
+        
+    </body>
+</html>
